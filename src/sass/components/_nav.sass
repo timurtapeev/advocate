@@ -1,0 +1,56 @@
+nav
+    background-color: $main-color
+    height: 60px
+.nav
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        padding: 15px 53px 17px
+        align-items: center
+    &__list 
+        height: 18px
+        li
+            display: inline-block
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            color: #FFFFFF
+            cursor: pointer
+            margin-right: 50px
+            transition: 0.5s all
+            position: relative
+            &:nth-child(1)
+                width: 53px
+            &:nth-child(2)
+                width: 54px
+            &:nth-child(3)
+                width: 76px
+            &:nth-child(4)
+                width: 63px
+            &:last-child
+                margin-right: 0
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                right: 50%
+                bottom: -3px
+                transform: translateX(50%)
+                height: -2px
+                width: 0%
+                background-color: #FFFFFF
+                transition: 0.5s all
+            &:hover
+                color: $gray
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    right: 50%
+                    bottom: -3px
+                    transform: translateX(50%)
+                    height: 1px
+                    width: inherit
+                    background-color: $gray
+                    

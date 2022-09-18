@@ -1,0 +1,78 @@
+.about-me
+    background-color: #F8F8F8
+    padding-top: 100px
+    padding-bottom: 150px
+    &__img
+        width: 385px
+        height: 570px
+        display: inline-block
+        object-fit: cover
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
+    &__title
+        @include title
+        margin-bottom: 120px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        .img
+            width: 385px
+            height: 570px
+            background-color: #fff
+    &__info
+        display: flex
+        flex-direction: column
+    &__achievement
+        margin-bottom: 25px
+        &_item
+            display: flex
+            margin-bottom: 15px
+            &:first-child > .about-me__achievement_main
+                padding: 22px 17px
+        &_header
+            width: 91px
+            height: 78px
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
+            border-radius: 5px
+            background-color: $golden
+            .img
+                margin: 0 auto
+                &_1
+                    width: 49px
+                    height: 52px
+                    margin: 12px 21px
+                &_2
+                    width: 59px
+                    height: 60px
+                    margin: 9px 16px
+                &_3
+                    width: 51px
+                    height: 51px
+                    margin: 13px 20px
+        &_main
+            width: 453px
+            height: 78px
+            background: #FFFFFF
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2)
+            border-radius: 5px
+            padding: 30px 17px
+            p
+                font-weight: 400
+                font-size: 18px
+                line-height: 18px
+                color: $main-color
+    &__additionaly
+        width: 543px
+        height: 284px
+        background: #FFFFFF
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2)
+        border: solid 12px $main-color
+        border-radius: 5px
+        padding: 26px 30px 26px 60px
+        font-weight: 400
+        font-size: 20px
+        line-height: 20px
+        li
+            margin-bottom: 7px
+
+        
+    

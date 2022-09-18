@@ -1,0 +1,56 @@
+.service
+    background-color: #FFFFFF
+    height: 853px
+    padding-top: 90px
+    &__title
+        @include title
+        margin: 0 0 145px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        padding: 0 17px
+        flex-wrap: wrap
+    &__item
+        width: 270px
+        height: 68px
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2))
+        background-color: $main-color
+        border-radius: 5px
+        margin-bottom: 30px
+        &:nth-child(2) > .service__item_text
+            font-size: 16px
+            line-height: 20px
+            transform: translateY(35%)
+        &:nth-child(5) > .service__item_text
+            font-size: 16px
+            line-height: 20px
+            transform: translateY(35%)
+        &:nth-child(6) > .service__item_text
+            transform: translateY(90%)
+        &_text
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+            color: #FFFFFF
+            transform: translateY(20%)
+        &_descr
+            position: relative
+            width: 270px
+            background: #E9EBFF
+            border-radius: 5px
+            margin-bottom: 170px
+            padding: 20px 58px 20px 68px
+            &_1
+                top: 28px
+                height: 180px
+            &_2
+                top: 44px
+                height: 264px
+            ul
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                li
+                    margin-bottom: 15px
+
